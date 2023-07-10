@@ -3,7 +3,7 @@ All documentation for the workshop is best viewed from the github.io pages
 [Documentation](https://ucdavis-bioinformatics-training.github.io/2023-July-Introduction-To-Python-For-Bioinformatics/)
 
 Introduction To Python For Bioinformatics<br>
-July 10th- 14th 2023, 2 to 5pm each day<br>
+July 10th - 14th 2023, 2 to 5pm each day<br>
 Organizer - [Bioinformatics Core at UC Davis](https://bioinformatics.ucdavis.edu/)<br>
 Contact - UC Davis Bioinformatics Core, training.bioinformatics@ucdavis.edu<br>
 
