@@ -254,7 +254,7 @@ last_gene = gene_list[-1]
 print("The last element of gene_list is: " + last_gene)
 # OR
 last_gene = gene_list[5]
-print("The last element of gene_list is: " + last_gene)
+print("The element at index 5 of gene_list is: " + last_gene)
 
 # getting a range of the list
 print("Elements 1 to 3 (non-inclusive) of gene_list: " + str(gene_list[1:3]))
