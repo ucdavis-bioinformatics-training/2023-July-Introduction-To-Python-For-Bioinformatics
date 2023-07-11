@@ -19,22 +19,27 @@ In many other languages, the "body" of an "if statement" (or any other programmi
 ```
 print("\nIF Statements\n")
 
+
+print("\nIF Statement 1\n")
 diffexp = 67
 if (diffexp > 0):
     print("Upregulated")
 else:
     print("Downregulated")
 
+print("\nIF Statement 2\n")
 diffexp = -9
 if (diffexp > 0):
     print("Upregulated")
 else:
     print("Downregulated")
 
+print("\nIF Statement 3\n")
 # An if statement doesn't need an else
 if (diffexp < 0):
     print("Downregulated")
 
+print("\nIF Statement 4\n")
 # If statements can have multiple elif (else if)
 # Try changing the value of diffexp to see how the output changes.
 diffexp = 25
@@ -47,19 +52,23 @@ elif (diffexp < 0):
 elif (diffexp < -50):
     print("Very Downregulated")
 
+print("\nIF Statement 5\n")
 # You can use "and", "or", & "not" to write more complex conditions
 if (diffexp > 0 and diffexp < 50):
     print("Differential expression between 0 and 50")
 
+print("\nIF Statement 6\n")
 if (diffexp < -50 or diffexp > 50):
     print("High Down or Up regulation")
 
+print("\nIF Statement 7\n")
 # The body of an if statement can have multiple lines of code
 diffexp=25
 if (diffexp > 0 and diffexp < 50):
     print("Differential expression between 0 and 50")
     print("Check the significance")
 
+print("\nIF Statement 8\n")
 # You can have nested if statements
 sig = 0.049
 if (diffexp > 0 and diffexp < 50):
@@ -94,6 +103,8 @@ for i in range(5):
 ```
 gene_list = ["DDX11L1","WASH7P","MIR6859-1","MIR1302-2HG","MIR1302-2","FAM138A"]
 
+print(\nIterating through a list\n")
+
 for id in gene_list:
     print(id + " is a gene of interest")
 ```
@@ -102,6 +113,8 @@ for id in gene_list:
 
 ```
 gene_exp_dict = {"DDX11L1":43.2,"WASH7P":45,"MIR6859-1":60.1,"MIR1302-2HG":12,"MIR1302-2":0.5,"FAM138A":23}
+
+print(\nIterating through a dictionary\n")
 
 for gene in gene_exp_dict.keys():
     print("Gene " + gene + " has expression value: " + str(gene_exp_dict[gene]))
@@ -130,10 +143,15 @@ print(fact)
 ```
 gene_list = ["DDX11L1","WASH7P","MIR6859-1","MIR1302-2HG","MIR1302-2","FAM138A"]
 
+
+print("\nBreak\n")
+
 for id in gene_list:
     print(id + " is a gene of interest")
     if (id == "MIR1302-2HG"):
         break
+
+print("\nContinue\n")
 
 for id in gene_list:
     if (id == "MIR1302-2HG"):
@@ -142,7 +160,7 @@ for id in gene_list:
     print(id + " is a gene of interest")
 ```
 
-**PRACTICE**: Using your personnel dictionary (from the Dictionary section practice), use a loop to print out all of the information for all of the employees. Using the gene expression dictionary, use multiple nested loops to print out all of the expression values.
+**PRACTICE**: Using your personnel dictionary (from the Dictionary section practice), use a loop to print out all of the information for all of the employees. Using the gene expression dictionary (from the homework), use multiple nested loops to print out all of the expression values.
 
 # Functions
 
@@ -154,17 +172,20 @@ import math
 
 print("\nFunctions\n")
 
+print("\nFunction 1\n")
 # Functions can have zero parameters and return nothing
 def hello():
     print("Hello, World!")
 
 hello()
 
+print("\nFunction 2\n")
 # Or they can have multiple parameters and return something
 def logfc(exp1,exp2):
     retval = math.log(exp2/exp1)
     return(retval)
 
+print("\nFunction 3\n")
 gene_exp_dict = {"DDX11L1":43.2,"WASH7P":45,"MIR6859-1":60.1,"MIR1302-2HG":12,"MIR1302-2":0.5,"FAM138A":23}
 
 de = logfc(gene_exp_dict['WASH7P'], gene_exp_dict['FAM138A'])
