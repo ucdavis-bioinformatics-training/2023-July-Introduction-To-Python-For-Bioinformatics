@@ -160,7 +160,7 @@ for id in gene_list:
     print(id + " is a gene of interest")
 ```
 
-**PRACTICE**: Using your personnel dictionary (from the Dictionary section practice), use a loop to print out all of the information for all of the employees. Using the gene expression dictionary (from the homework), use multiple nested loops to print out all of the expression values.
+**PRACTICE**: Using your personnel dictionary (from the Dictionary section practice), use a single loop to print out all of the information for all of the employees. Using the gene expression dictionary (from the Dictionary section practice), use multiple nested loops to print out all of the expression values individually for each sample.
 
 # Functions
 
